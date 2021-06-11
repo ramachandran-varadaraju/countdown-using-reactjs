@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 2rem;
+  min-height: 100vh;
+  gap: 1rem;
+  background: #f1faee;
+}
+
+.container .content {
+  flex: 1 1 400px;
+}
+
+.container .image {
+  flex: 1 1 400px;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  color: #f1faee;
+  background: #1d3557;
+  border-radius: 3px;
+  transition: 0.25s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  letter-spacing: 2.5px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container .content {
+    text-align: center;
+  }
+}
